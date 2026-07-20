@@ -292,7 +292,7 @@
     .project-row {
       display: grid; grid-template-columns: 72px 1fr auto;
       align-items: center; gap: 40px;
-      padding: 30px 0;
+      padding: 30px 48px;
       border-bottom: 1px solid var(--border);
       transition: background .2s;
       cursor: pointer;
@@ -310,11 +310,15 @@
     .p-year--new {
       color: #000;
       background: var(--accent);
-      border-radius: 8px;
-      padding: 3px 8px;
+      border-radius: 100px;
+      padding: 6px 12px;
       font-size: 13px;
       letter-spacing: 1px;
       align-self: center;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .project-row:hover .p-year--new { color: #000; }
 
@@ -396,6 +400,11 @@
       object-position: top center;
       border-radius: 20px 20px 0 0;
       display: block;
+    }
+
+    .pdf-img-wrap--fit img {
+      object-fit: contain;
+      background: #111c11;
     }
 
     .pdf-details {
@@ -713,15 +722,15 @@
   <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero-text">
-      <p class="hero-eyebrow">Data Analyst · Power BI · Procurement Intelligence</p>
+      <p class="hero-eyebrow">Data Analyst · Business Intelligence · App Developer</p>
       <h1 class="hero-title">
         EDUARDO<br>
-        <span class="hl">L.</span><br>
+        <span class="hl">L</span><br>
         VASQUEZ
       </h1>
       <p class="hero-desc">
-        Turning raw operational data into decisions. I build reporting systems,
-        procurement dashboards, and QA pipelines that actually change how teams work.
+        Turning raw operational data into business decisions. I build reporting systems,
+        dashboards, and QA pipelines that actually change how teams work.
       </p>
       <div class="hero-actions">
         <a href="#works" class="btn-primary">View My Work →</a>
@@ -800,8 +809,8 @@
         <p>
           Currently at <strong>FLIX / Greyhound</strong>, leading procurement analytics for North America's
           post-acquisition integration — building vendor intelligence from scratch, not from templates.
-          Previously at <strong>Exact Sciences</strong>, I designed QA performance dashboards tracking
-          164 agents across two countries.
+          Previously at <strong>Exact Sciences</strong>, a healthcare diagnostics company based in Madison, Wisconsin,
+          I designed QA performance dashboards tracking 164 agents across two countries.
         </p>
         <p>
           I don't just analyze data — I build the infrastructure that makes analysis possible.
@@ -944,7 +953,7 @@
         </div>
         <div class="pdf-canvas-wrap">
           <div class="pdf-img-wrap">
-            <img src="exact_dashboard_3.png" alt="Exact Sciences Quality Scorecard Trends">
+            <img src="exact_dashboard_3.png" alt="Exact Sciences Quality Scorecard Trends" style="object-fit:contain;">
           </div>
           <div class="pdf-details">
             <div class="pdf-label">Quality Scorecard Trends</div>
@@ -958,7 +967,7 @@
         </div>
         <div class="pdf-canvas-wrap">
           <div class="pdf-img-wrap">
-            <img src="exact_dashboard_4.png" alt="Exact Sciences Agent Performance & Coaching View">
+            <img src="exact_dashboard_4.png" alt="Exact Sciences Agent Performance & Coaching View" style="object-fit:contain;">
           </div>
           <div class="pdf-details">
             <div class="pdf-label">Agent Performance & Coaching View</div>
@@ -1041,7 +1050,7 @@
         </div>
         <div class="pdf-canvas-wrap">
           <div class="pdf-img-wrap">
-            <img src="flix_dashboard_2.png" alt="FLIX Materials & Benchmark Breakdown">
+            <img src="flix_dashboard_2.png" alt="FLIX Materials & Benchmark Breakdown" style="object-fit:contain;">
           </div>
           <div class="pdf-details">
             <div class="pdf-label">Materials & Benchmark Breakdown</div>
