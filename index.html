@@ -546,6 +546,34 @@
       .ams-concept-card { grid-template-columns: 1fr; }
     }
 
+    /* Live mockup iframe card */
+    .mockup-iframe-wrap {
+      width: 100%;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid rgba(200,255,0,.25);
+      background: #0A0F0A;
+      position: relative;
+    }
+    .mockup-iframe-wrap iframe {
+      width: 100%;
+      height: 520px;
+      border: none;
+      display: block;
+      border-radius: 20px;
+    }
+    .mockup-live-badge {
+      position: absolute;
+      top: 14px; right: 16px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px; letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #0A0F0A;
+      background: var(--accent);
+      padding: 3px 10px;
+      border-radius: 100px;
+    }
+
     .gallery-block-meta {
       display: flex; flex-direction: column; gap: 4px;
     }
@@ -1068,7 +1096,7 @@
     <!-- ── AMS CONCEPT BLOCK ── -->
     <div class="gallery-block fu">
       <div class="gallery-block-header">
-        <div class="gallery-block-logo ams">AMS</div>
+        <div class="gallery-block-logo ams">BI</div>
         <div class="gallery-block-meta">
           <span class="gallery-block-title">This Could Be You</span>
           <span class="gallery-block-year new-badge-inline">NEW · Concept Dashboard</span>
@@ -1076,26 +1104,72 @@
       </div>
       <div class="ams-concept-card">
         <div class="ams-img-wrap">
-          <img src="ams_dashboard.png" alt="AMS Concept Dashboard">
+          <img src="ams_dashboard.png" alt="BI Concept Dashboard">
         </div>
         <div class="ams-desc-wrap">
           <p class="ams-eyebrow">A little good faith goes a long way.</p>
           <p class="ams-body">
-            I put this dashboard together on my own time using mock data — nothing here
-            came from AMS systems or internal records. Every number is simulated. Every
-            visual is intentional. The point isn't to show what AMS looks like today;
-            it's to show what a data-driven version of it <em>could</em> look like —
-            and to prove I don't wait to be asked before I start thinking about a problem.
+            I build concept dashboards before I'm asked to — using mock data,
+            zero confidential records, and a clear picture of what operational
+            visibility could look like for a new team.
           </p>
           <p class="ams-body">
-            If this lands in front of the right person: hi. Let's talk.
+            Every number here is simulated. Every visual is intentional.
+            The point isn't to show what your BI looks like today — it's to show
+            what a structured, data-driven version of it <em>could</em> look like:
+            clean pipelines, stakeholder-ready reporting, and dashboards that
+            answer the right questions before anyone has to ask.
+          </p>
+          <p class="ams-body">
+            That's what I bring to a new organization — not just the tools,
+            but the instinct to build something before the ask even lands.
           </p>
           <div class="pdf-tags" style="margin-top:20px;">
             <span class="pdf-tag">Mock Data Only</span>
             <span class="pdf-tag">No Confidential Info</span>
             <span class="pdf-tag">Built on Good Faith</span>
             <span class="pdf-tag">Power BI</span>
+            <span class="pdf-tag">Stakeholder Ready</span>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── MISSION CONTROL MOCKUP ── -->
+    <div class="gallery-block fu">
+      <div class="gallery-block-header">
+        <div class="gallery-block-logo ams">MC</div>
+        <div class="gallery-block-meta">
+          <span class="gallery-block-title">Materials &amp; Benchmark — Mission Control</span>
+          <span class="gallery-block-year new-badge-inline">LIVE · Interactive Mockup</span>
+        </div>
+      </div>
+      <div class="mockup-iframe-wrap">
+        <span class="mockup-live-badge">// LIVE RENDER</span>
+        <iframe
+          src="../Power BI/dashboard_mockup.html"
+          title="Mission Control BI Dashboard Mockup"
+          scrolling="no"
+          loading="lazy">
+        </iframe>
+      </div>
+      <div class="ams-desc-wrap" style="margin-top:18px;">
+        <p class="ams-eyebrow">Mission Control Aesthetic.</p>
+        <p class="ams-body">
+          A fully interactive HTML mockup demonstrating how procurement and materials data
+          could be presented in a high-density, real-time dashboard format — scan lines,
+          animated bar charts, color-coded status rows, and a monospace data table that
+          reads like an operations center feed.
+        </p>
+        <p class="ams-body">
+          Built to show that BI doesn't have to look generic. Design and data
+          can — and should — work together.
+        </p>
+        <div class="pdf-tags" style="margin-top:16px;">
+          <span class="pdf-tag">Mock Data</span>
+          <span class="pdf-tag">HTML / CSS / JS</span>
+          <span class="pdf-tag">No Dependencies</span>
+          <span class="pdf-tag">Dark Theme</span>
         </div>
       </div>
     </div>
